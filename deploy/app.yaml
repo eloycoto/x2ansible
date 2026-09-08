@@ -272,6 +272,8 @@ data:
           # Example for AWS Bedrock with bearer token:
           AWS_REGION: ${AWS_REGION}
           AWS_BEARER_TOKEN_BEDROCK: ${AWS_BEARER_TOKEN_BEDROCK}
+          SUMMARY_CONTEXT_SIZE: ${SUMMARY_CONTEXT_SIZE}
+          MAX_TOKENS: ${MAX_TOKENS}
         aap:
           url: ${AAP_URL:-https://aap.example.com}
           orgName: ${AAP_ORG_NAME:-MyOrganization}
