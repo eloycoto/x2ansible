@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Developing
 nav_order: 7

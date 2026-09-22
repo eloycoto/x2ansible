@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Advanced Features
 nav_order: 4

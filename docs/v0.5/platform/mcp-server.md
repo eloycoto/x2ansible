@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: MCP tools
 parent: X2Ansible Platform

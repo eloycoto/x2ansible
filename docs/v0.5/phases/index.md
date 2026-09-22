@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Phases
 nav_order: 3

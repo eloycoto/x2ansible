@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: API Reference
 parent: X2Ansible Platform

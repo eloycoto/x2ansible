@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: X2Ansible Platform
 has_children: true

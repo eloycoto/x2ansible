@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Publish
 parent: Phases

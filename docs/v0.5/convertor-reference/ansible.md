@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Ansible Modernization
 parent: X2A Convertor Reference

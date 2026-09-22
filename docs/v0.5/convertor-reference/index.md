@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: X2A Convertor Reference
 nav_order: 5

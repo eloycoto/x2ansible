@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Authorization
 parent: X2Ansible Platform

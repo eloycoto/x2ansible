@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Docker Usage
 parent: Getting Started

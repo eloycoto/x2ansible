@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Puppet
 parent: X2A Convertor Reference

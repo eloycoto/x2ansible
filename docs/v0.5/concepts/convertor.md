@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: The Migration Engine
 parent: Concepts

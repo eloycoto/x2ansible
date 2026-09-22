@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Plugin Compatibility
 parent: X2Ansible Platform

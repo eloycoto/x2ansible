@@ -1,5 +1,4 @@
 ---
-nav_exclude: true
 layout: default
 title: Authentication
 parent: X2Ansible Platform
