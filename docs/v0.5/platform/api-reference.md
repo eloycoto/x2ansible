@@ -19,7 +19,7 @@ This page documents the X2A Convertor REST API using the OpenAPI specification.
 <script>
 window.onload = function() {
   const ui = SwaggerUIBundle({
-    url: "https://raw.githubusercontent.com/redhat-developer/rhdh-plugins/refs/heads/main/workspaces/x2a/plugins/x2a-backend/src/schema/openapi.yaml",
+    url: "https://raw.githubusercontent.com/redhat-developer/rhdh-plugins/a23934ac2ba83451ef016b727b5c0258379cd390/workspaces/x2a/plugins/x2a-backend/src/schema/openapi.yaml",
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [
