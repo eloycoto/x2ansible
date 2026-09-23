@@ -3,7 +3,7 @@ layout: default
 title: Plugin Compatibility
 parent: X2Ansible Platform
 nav_order: 8
-version_data: rhdh-plugins-v0.5
+version_data: rhdh-plugins-v05
 ---
 
 # Plugin Compatibility
