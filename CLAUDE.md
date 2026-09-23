@@ -159,7 +159,7 @@ See `docs/latest/index.md` for the platform architecture example and `docs/lates
 
 ### Documentation versions
 
-Documentation is published under a version prefix. `docs/latest/` and the root `deploy/` directory describe the current release. A released version (for example `docs/v0.5/`) is a frozen copy and must not be edited when current behavior changes. Its deployment files are frozen in the matching `deploy/v0.5/` directory.
+Documentation is published under a version prefix. `docs/latest/` and the root `deploy/` directory describe the current release. Released versions (for example `docs/v0.5/` and `deploy/v0.5/`) are frozen snapshots and **must not be modified** after release. Do not update, fix, or otherwise touch a frozen version when current behavior changes; make those changes only in `latest/` and the live `deploy/` directory, then create a new version snapshot when releasing.
 
 To add a release, follow the checklist in [`docs/latest/developing/versioning.md`](docs/latest/developing/versioning.md). In short:
 
