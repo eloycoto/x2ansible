@@ -11,18 +11,19 @@ This guide covers deploying the X2A Backstage plugin on OpenShift using Red Hat 
 
 ## Prerequisites
 
-- OpenShift cluster access (CRC or production cluster)
-- Cluster-admin rights (for operator installation)
-- `oc` CLI tool installed and configured([documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/cli_tools/openshift-cli-oc#cli-getting-started))
-- AWS credentials with access to Bedrock (for LLM functionality)
-- Ansible Automation Platform instance (optional, for publishing roles)
+- Access to an OpenShift or Kubernetes cluster
+- Cluster-admin permissions (for operator installation)
+- The `oc` or `kubectl` CLI tool, installed and configured ([documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/cli_tools/openshift-cli-oc#cli-getting-started))
+- LLM inference credentials for OpenAI, Anthropic, AWS Bedrock, Azure AI, or any OpenAI-compatible endpoint. In this example, we use AWS credentials with access to Bedrock for LLM functionality.
+- An Ansible Automation Platform instance (optional, for publishing roles)
+- Credentials for your Git provider (see the [Authentication]({% link latest/platform/authentication.md %}) page for setup instructions)
 
 ## Quick Start
 
 Deploy to any namespace with these simple commands:
 
 ```bash
-# 1. Git clone current x2a-ansible code
+# 1. Clone the current X2Ansible repository
 git clone https://github.com/x2ansible/x2ansible/
 cd x2ansible
 
@@ -38,9 +39,6 @@ oc apply -n <your-namespace> -f deploy/secrets.yaml
 
 # 5. Deploy application resources
 oc apply -n <your-namespace> -f deploy/app.yaml
-
-# Edit deploy/secrets.yaml with your actual credentials
-oc apply -n <your-namespace> -f deploy/secrets.yaml
 
 # 6. Get the application URL
 oc get route developer-hub -n <your-namespace> -o jsonpath='https://{.spec.host}{"\n"}'
@@ -158,7 +156,7 @@ Most teams can leave the bundled `app-config-rhdh` fragment as-is. Edit it when 
 - **`auth.experimentalDynamicClientRegistration`** - tighten `allowedRedirectUriPatterns` in production (the sample uses broad patterns suitable for labs).
 - **`backend.cors`** - add or remove origins if you use browser-based MCP clients or the Inspector from a host that is not already listed.
 
-YAML examples and behavior notes for those keys live on the [MCP tools]({% link latest/platform/mcp-server.md %}#advanced-configuration) page.
+YAML examples and behavior notes for those keys are on the [MCP tools]({% link latest/platform/mcp-server.md %}#advanced-configuration) page.
 
 After any change to `deploy/app.yaml`, re-apply and restart the RHDH pod so configuration and dynamic plugins reload:
 
@@ -175,7 +173,7 @@ Get the RHDH URL:
 oc get route developer-hub -n <your-namespace> -o jsonpath='https://{.spec.host}{"\n"}'
 ```
 
-Open the URL in your browser and navigate to the X2A menu item to start using the migration tool.
+Open the URL in your browser, then navigate to the X2A menu item to start using the migration tool.
 
 ## Troubleshooting
 

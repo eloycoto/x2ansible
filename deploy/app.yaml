@@ -274,6 +274,7 @@ data:
           AWS_BEARER_TOKEN_BEDROCK: ${AWS_BEARER_TOKEN_BEDROCK}
           SUMMARY_CONTEXT_SIZE: ${SUMMARY_CONTEXT_SIZE}
           MAX_TOKENS: ${MAX_TOKENS}
+          RECURSION_LIMIT: 1500
         aap:
           url: ${AAP_URL:-https://aap.example.com}
           orgName: ${AAP_ORG_NAME:-MyOrganization}
