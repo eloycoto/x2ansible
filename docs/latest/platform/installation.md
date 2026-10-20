@@ -14,7 +14,7 @@ This guide covers deploying the X2A Backstage plugin on OpenShift using Red Hat 
 - Access to an OpenShift or Kubernetes cluster
 - Cluster-admin permissions (for operator installation)
 - The `oc` or `kubectl` CLI tool, installed and configured ([documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/cli_tools/openshift-cli-oc#cli-getting-started))
-- LLM inference credentials for OpenAI, Anthropic, AWS Bedrock, Azure AI, or any OpenAI-compatible endpoint. In this example, we use AWS credentials with access to Bedrock for LLM functionality.
+- LLM inference credentials for one of the supported providers: OpenAI-compatible endpoints, Anthropic, AWS Bedrock, Google Vertex AI, or Google Gemini. See the [LLM configuration reference]({% link latest/convertor-reference/configuration_options.md %}#llm-configuration) for the more detailed information. This example uses AWS Bedrock with a bearer token (`AWS_BEARER_TOKEN_BEDROCK`).
 - An Ansible Automation Platform instance (optional, for publishing roles)
 - Credentials for your Git provider (see the [Authentication]({% link latest/platform/authentication.md %}) page for setup instructions)
 
